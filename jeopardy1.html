@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jeopardy</title>
+    <link href="https://fonts.googleapis.com/css?family=Copse&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="jeopardy1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>Jeopardy!</h1>
+      <button id="start">Start!</button>
+    </header>
+
+    <table id="jeopardy">
+      <thead>
+          <tr>
+            <th class="category-header"></th>
+            <th class="category-header"></th>
+            <th class="category-header"></th>
+            <th class="category-header"></th>
+            <th class="category-header"></th>
+            <th class="category-header"></th>
+            <th class="category-header"></th>
+            
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+
+        </tr>
+        <tr>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+        </tr>
+        <tr>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer ="><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+        </tr>
+        <tr>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+        </tr>
+        <tr>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+            <td class="cell" onclick="handleClick(evt)" data-clue-type="question" data-question ="" data-answer =""><span class="clue"">?</span></td>
+      </tbody>
+    </table>  
+    
+  <script src="https://unpkg.com/jquery"></script>
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="https://unpkg.com/lodash"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+  <script src="jeopardy1.js"></script>
+  
+  
+  
+  
+  </body>
+</html>
